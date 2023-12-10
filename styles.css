@@ -1,0 +1,30 @@
+.flexContainer, .squareLine {
+    display: flex;
+    margin: 0;
+}
+
+.flexContainer {
+    margin: auto;
+    height: 960px;
+    width: 960px;
+    border: 4px solid gray;
+}
+
+.squareLine {
+    flex: 1;
+}
+
+.flexContainer {
+    flex-direction: column;
+}
+
+.square {
+    flex: 1;
+    /* width: 38px;
+    height: 38px; */
+    /* border: 2px solid gray; */
+}
+
+.buttonContainer {
+    text-align: center;
+}
