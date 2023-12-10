@@ -12,7 +12,12 @@ for (let i = 0; i < 16; i++) {
         squareLine.appendChild(square);
 
         square.addEventListener(`mouseover`, function () {
-            square.style.backgroundColor = `gold`;
+            // random color
+            square.style.backgroundColor = `rgb(
+                ${Math.floor(Math.random() * 255)},
+                ${Math.floor(Math.random() * 255)},
+                ${Math.floor(Math.random() * 255)}
+            )`;
         });
     }
     // newSquare.style.border = `2px solid gray`;
@@ -40,7 +45,12 @@ button.addEventListener(`click`, function () {
                 squareLine.appendChild(square);
         
                 square.addEventListener(`mouseover`, function () {
-                    square.style.backgroundColor = `gold`;
+                    // random color
+                    square.style.backgroundColor = `rgb(
+                        ${Math.floor(Math.random() * 255)},
+                        ${Math.floor(Math.random() * 255)},
+                        ${Math.floor(Math.random() * 255)}
+                    )`;
                 });
             }
             // newSquare.style.border = `2px solid gray`;
