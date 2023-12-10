@@ -10,9 +10,17 @@ for (let i = 0; i < 16; i++) {
         square.classList.add(`square`);
 
         squareLine.appendChild(square);
-
+        let rgbColor = 255;
         square.addEventListener(`mouseover`, function () {
-            square.style.backgroundColor = `gold`;
+            if (rgbColor > 0) {
+                // darken color
+                rgbColor -= 10;
+            }
+            square.style.backgroundColor = `rgb(
+                ${rgbColor},
+                ${rgbColor},
+                ${rgbColor}
+            )`;
         });
     }
     // newSquare.style.border = `2px solid gray`;
@@ -39,8 +47,17 @@ button.addEventListener(`click`, function () {
         
                 squareLine.appendChild(square);
         
+                let rgbColor = 255;
                 square.addEventListener(`mouseover`, function () {
-                    square.style.backgroundColor = `gold`;
+                    if (rgbColor > 0) {
+                        // darken color
+                        rgbColor -= 10;
+                    }
+                    square.style.backgroundColor = `rgb(
+                        ${rgbColor},
+                        ${rgbColor},
+                        ${rgbColor}
+                    )`;
                 });
             }
             // newSquare.style.border = `2px solid gray`;
